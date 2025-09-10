@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad's Off-Road Service</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "XyHv8TxZ4-77BUjj3",});})();
+    </script>
+</head>
+<body>
+    <div class="Header">
+        <img src="https://mattracks.co/img/logos/logo-1994.svg" alt="Mattracks" title="Mattracks" width="250" data-categories="unclassified" id="MattracksLogo">
+        <h2 #brad><a href="tel:612-290-0897">Brad's Off-Road Service</a></h2>
+        <nav class="NavBar">
+            <ul>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#ContactSection">Contact Us</a></li>
+                <li><a href="https://www.mattracks.co/tracks/">Browse Tracks</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 class="AboveSlider"></h2>
+    
+    <span>
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="Images\MeDadAndCody.jpg" alt="Mattracks EZ Tracks ATV">
+                <img class="slide" src="Images\Ranger.jpg" alt="Polaris Ranger with Mattracks">
+                <img class="slide" src="Images\SUV.jpg" alt="Mattracks on SUV">
+                <img class="slide" src="Images\RedBull Car.JPG" alt="Tracks on Red Bull Car">
+                <img class="slide" src="Images\WierdVehicle.jpg" alt="Mattracks on Round Truck">
+                <img class="slide" src="Images\RangerOnIce.jpg" alt="Ranger with Mattracks on Ice">
+                <img class="slide" src="Images\JeepOnIce.JPG" alt="Truck with Mattracks">
+                <img class="slide" src="Images\Car with Siren.JPG" alt="State Patrol Car with Mattracks">
+
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+    </span>
+    <div class="Services">
+        <h1 id="Services">Services</h1>
+    
+        <div id="Gallery">
+            <div class="GalleryItem">
+                <img src="Images\RedRanger.jpg" alt="Red Ranger with red Mattracks" class="GallerySize">
+                <p>Mattracks Installations </p>
+            </div>
+            <div class="GalleryItem">
+                <img src="Images\TrackInStock.jpg" alt="Mattracks in stock" class="GallerySize">
+                <p>Mattracks Sales</p>
+            </div>
+            <div class="GalleryItem">
+                <img src="Images\TrackRepair.jpg" alt="Mattracks repair" class="GallerySize">
+                <p>Mattracks Maintenence</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="AboutUs" id="AboutUs">
+        <h1>About Us</h1>
+        <p>Brad's Off-Road Service</p>
+        <p></p>
+    </div>
+    <div class="ContactUs" id="ContactSection">
+        <div class="ContactHeader">
+            <h1>Contact Us</h1>
+            <button class="PhoneButton" onclick="window.location.href='tel:612-290-0897'"></button>
+        </div>
+        <form onsubmit="sendMail(event)">
+            
+            
+            <input type="text" name="email" id="email" placeholder="Type Email Address Here" required>
+
+            <input type="text" name="name" id="name" requred placeholder="Full Name">
+
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+
+            <textarea name="message" id="message" placeholder="Type Message Here" required rows="10"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    
+</body>

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-size : 7vw;
+    font-weight : 300;
+    color: yellow;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top : 6rem;
+    justify-content: center;
+}
+
+.ContactButton {
+    margin-right : 5vw;
+    margin-top: 1vw;
+    margin-bottom : 1vw;
+    padding-bottom : 3vw;
+    font-family : 'Chathura', sans-serif;
+    z-index: 101;
+    position : absolute;
+    right : 0;
+    top : 0;
+    border : solid 1vw yellow;
+    background-color : yellow;
+    border-radius : 20px;
+    width : 10vw;
+    height : 4vw;
+    font-size : 2vw;
+    font-weight : 400;
+    
+}
+.ContactButton:hover {
+    opacity : 0.8;
+    cursor : pointer;
+}
+.NavBar {
+    width : 100%;
+    display : flex;
+    padding : 0;
+    margin : 0;
+}
+.Header {
+    position : sticky;
+    top : 0;
+    z-index : 100;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Chathura', sans-serif; 
+    font-weight: 400;
+    width : 100%; 
+    background-color :rgb(0, 0, 0);
+    height: auto;
+}
+
+.NavBar ol, ul {
+    display : flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    width : 100%;
+
+
+
+}
+li {
+    font-family : 'Chathura', sans-serif;
+    font-weight: 400;
+    max-width : 100%;
+    max-height : inherit;
+    height : inherit;
+
+}
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 3vw;
+    border : solid 0.15rem rgb(56, 56, 56);
+    border-radius: 20%;
+    padding-left : 2vw;
+    padding-right : 2vw;
+    background-color: rgb(46, 44, 44);
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+body {
+    display: inherit;
+    background-color: rgb(43, 43, 43);
+    margin: 1rem, 1rem, 0, 1rem;
+}
+#MattracksLogo {
+    display : flex;
+    justify-content: center;
+    padding-top : 1rem;
+    padding-right : 25%;
+    padding-left : 25%;
+    width : 100%;
+    background-color: rgb(0, 0, 0);
+    height : auto;
+    max-height : 3rem;
+    padding-bottom : 0rem;
+}
+
+.slider {
+    position: relative;
+    width:100%;
+    padding-left : 10%;
+    padding-right : 10%;
+    background-color:rgb(29, 29, 29) ;
+    margin-top: 0;
+    overflow: hidden;
+    border: 10px groove rgba(0, 0, 0, 0.418); 
+}
+.slider img{
+    width: 100%;
+    height: 50%;
+    display: none;
+}
+img.displaySlide {
+    display : block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size : 1.5rem;
+    padding: 10px 15px;
+    background-color : hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.AboveSlider {
+    font-family: 'Chathura', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    color: yellow;
+}
+.previous {
+    Left: 0;
+}
+.next {
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+.Services {
+    display : flex;
+    flex-direction : column;
+    font-family: 'Chathura', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(56, 56, 56);
+    justify-content: center;
+    width : 100%;
+}
+
+ #Gallery{
+
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.GalleryItem {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background-color: rgb(56, 56, 56);
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 0.8;
+    display: inline-flex;
+    flex-direction: column;
+    max-width : 100%;
+    height : auto;
+    
+    
+    
+}
+.GalleryItem p {
+    text-align : center;
+}
+.GalleryItem img {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    max-width : 80%;
+    height : auto;
+}
+.GallerySize {
+    width : 6em;
+    height : auto;
+    display: block;
+}
+.AboutUs {
+    font-family: 'Chathura', sans-serif;
+    font-weight: 400; 
+    color: whitesmoke;
+    font-size : 2rem;
+    padding : 2rem;
+    height : auto;
+}
+.AboutUs p {
+    font-size : 2rem;
+}
+.ContactUs {
+    font-family: 'Chathura', sans-serif;
+    font-weight: 400; 
+    color: whitesmoke;
+    font-size : 2rem;
+    height : auto;
+    display: block;
+}
+#Services {
+    margin-bottom : 1rem;
+    background-color: rgb(56, 56, 56);
+}
+.PhoneButton {
+    background: url('Images/Phones.png') no-repeat center;
+    background-size: contain;
+    border: solid whitesmoke 0.2em;
+    border-radius : 50%;
+    width: 5em;
+    height: 5em;
+    display : block;
+    cursor: pointer;
+    position: inherit;
+    left: 12rem;
+    margin-left : 1rem;
+}
+.ContactHeader {
+    background-color:rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 56);
+}
+.checkboxes {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.checkboxes input[type="checkbox"] {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+form input, form textarea, form button{
+    max-width : 100%;
+    resize : none;
+    position : relative;
+    padding : 0.5rem;
+    background :hsla(0, 0%, 0%, 0.5);
+    display : block;
+    border : solid 0.3em rgb(56, 56, 56);
+    border-radius: 5px;
+    color: white;
+}
+form button {
+    color : grey;
+    width: 50%;
+    margin-left : auto;
+    margin-right : auto;
+
+}
+form button:hover {
+    cursor : pointer;
+    opacity : 0.8;
+}
+form textarea {
+    field-sizing: content;
+    overflow : hidden;
+}
+form textarea:focus, form input:focus {
+    outline : none;
+}
+
